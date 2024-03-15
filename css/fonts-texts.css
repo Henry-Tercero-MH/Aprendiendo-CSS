@@ -1,0 +1,40 @@
+/* font-family
+font-size
+font-wieght
+font-style
+font-variant
+font */
+
+.font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.annapurna {
+  color: blueviolet;
+  font-family: "Annapurna SIL", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.annapurna-sil-bold {
+  font-family: "Annapurna SIL", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Text-align
+text-decoration
+text-indent
+text-overflow
+text-trasform
+
+text-spacing
+ */
+.text {
+  font-size: 2rem;
+  text-align: justify;
+  text-transform: capitalize;
+  writing-mode: vertical-lr;
+}

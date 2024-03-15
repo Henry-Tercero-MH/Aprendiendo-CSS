@@ -1,0 +1,23 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: thick solid black;
+  width: 400px;
+  height: 400px;
+}
+.card img {
+  height: 300px;
+  object-fit: fill;
+  object-fit: cover;
+  background-color: blue;
+  object-fit: scale-down;
+  object-fit: contain;
+  object-fit: none;
+  object-position: left top;
+  object-position: right bottom;
+  object-position: -50px center;
+  object-position: 50% 50%;
+}

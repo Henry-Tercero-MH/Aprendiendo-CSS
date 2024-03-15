@@ -1,0 +1,7 @@
+.list {
+  list-style: circle;
+}
+.list-2 li {
+  background-color: coral;
+  list-style-position: inside;
+}

@@ -1,0 +1,46 @@
+.color-by-name {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+}
+/*
+Sistema Hexadecimal
+colores en HEX van a ser colores de 6 digitos 
+#FF6600
+
+
+RGB (medios digitales) vs CMYK(medios impresos)
+*/
+/*Los colores HEX manejan 6 digitos y 2 mas para manejar la opacidad de 01-99 */
+.color-hex {
+  background-color: #ff6600;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+  background-color: #00000050;
+}
+/*RGB acepta 8 bits por cada canal de color*/
+.colors-rgb {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+  background-color: RGB(255, 102, 255);
+}
+
+/*HSL tono saturacion y luminosidad
+el primer valor es hue (circulo cromatico del color
+el segundo es la saturacion del color
+el tercero es la luminosidad*/
+.color-hsl {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+  background-color: hsl(147, 89%, 29%);
+}
+/*
+Color transparente
+*/
+.color-transparent {
+  background-color: darkmagenta;
+  background-color: transparentS;
+  background-color: currentColor;
+}

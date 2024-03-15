@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/forms.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Formulario</h1>
+  <h4>Formulario de Contacto</h4>
+  <form class="contact-form" action="https://formsubmit.co/tercerohernandezhenrymisael@gmail.com" method="POST">
+    <input type="text" name="nombre" id="" placeholder="Escribe_tu_nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+      title="Nombre solo acepta letras y espacios en blanco" required>
+
+    <input type="email" name="correo" id="" placeholder="Escribe_tu_correo"
+      pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="formato de correo invalido" required>
+
+    <textarea placeholder="Escribe tus comentarios" name="comentarios" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+  <h3><a href="index.html#inicio"><img src="img/icons8_Hand_Cursor_64px_1.png"></a></h3>
+
+
+</body>
+
+</html>

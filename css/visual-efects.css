@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.box {
+  border: thick solid black;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+.shadows {
+  color: navy;
+  font-size: 2rem;
+  text-align: center;
+  /* box-shadow: mov-x mov-y radius-blur spred-blur color inset/ouset; */
+  box-shadow: 1rem 1rem 2rem 0.5rem black;
+  /* box-shadow: mov-x mov-y radius-blur color inset/ouset; */
+  text-shadow: -1rem -1rem 0rem hotpink;
+}
+.shadows-multiple {
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 1rem 1rem 1rem 1rem black, 1rem 1rem 1rem 1rem hotpink inset;
+  text-shadow: -1rem -1rem 0.5rem yellow;
+}
+.drop-shadow img {
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(mov-x mov-y blur radius-color); */
+  filter: drop-shadow(1rem 1rem 1rem red);
+}
+
+.linear-gradient {
+  background-image: linear-gradient(red, green);
+  background-image: linear-gradient(red, green, blue);
+  background-image: linear-gradient(to right, green, blue, yellow);
+  background-image: linear-gradient(to right, green 30% - 67%, white 67%, red);
+}
+
+.radial-gradient {
+  background-image: radial-gradient(cyan, red, yellow);
+
+  background-image: radial-gradient(
+    circle 100px at top,
+    yellow 30%,
+    violet 50%,
+    orange 80%
+  );
+  background-image: radial-gradient(
+    circle 100px at bottom,
+    cyan 30%,
+    violet 60%,
+    orange 90%
+  );
+  background-image: radial-gradient(
+    ellipse 100px 50px at center,
+    red 30%,
+    violet 60%,
+    white 90%
+  );
+}
+.conic-gradial {
+  background-image: conic-gradient(red, blue, gold);
+  background-image: conic-gradient(
+    from 90deg,
+    red 0deg 120deg,
+    white 120deg 240deg,
+    red 240deg
+  );
+}
+.linear-repit {
+  background-image: repeating-linear-gradient(
+    46deg,
+    red 0px 10px,
+    green 10px 15px,
+    blue 20px 25px
+  );
+}
+.radial-repit {
+  background-image: repeating-radial-gradient(
+    4rem,
+    cyan 0px 10px,
+    magenta 10px 20px,
+    yellow 30px 40px
+  );
+}
+.conic-repit {
+  background-image: repeating-conic-gradient(
+    red 0% 8%,
+    yellow 8% 16%,
+    black 16% 24%
+  );
+}
+.chart-gradient {
+  background-image: conic-gradient(red 0% 50%, blue 50% 80%, gold 80%);
+  border-radius: 50%;
+}
+.donut-gradient {
+  border-color: thin solid 5px;
+  background-image: radial-gradient(white 0% 40%, black 42%, transparent 43%),
+    conic-gradient(red 0% 50%, blue 50% 80%, gold 80%);
+  border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+::before {
+  box-sizing: inherit;
+  /*
+Unidades de Medida
+1) Absolutas ( su valor no cambia son unidades del mundo real )
+pc, cm , mm , in ,Q
+pt(1/72in)
+px(1/96in)
+
+2) Relativas (Su valor es relativo a un contexto)
+em, rem , ex , ch - al tamaño de la fuente
+em - basada en la anchura de la "m" de la fuente de elemento  
+rem - basada en la anchura de la "m" de la fuente del elemento raiz (html)
+ex - basada en la altura de la "x" de la fuente del elemento 
+ch - basada en la altura del "0" de la fuente del elemento 
+% - al tamaño del contenedor
+vw, vh, vmin, vmax - al tamaño del viewport
+vw -ancho del viewport del 1 al 100
+vmax entre vw y vh toma el que tenga mayor valor
+vmin -entre vw y vh toma el que tenga menor valor 
+
+conversiones entre unidades -http://pxtoem.com/
+
+
+*/
+}
+.pixels {
+  background-color: cadetblue;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  font-size: 32px;
+  border: rebeccapurple thick solid;
+}
+.ems {
+  background-color: cadetblue;
+  padding: 1em 0.5em;
+  border: 5px solid rebeccapurple;
+}
+.ems-child {
+  background-color: cadetblue;
+  border: 5px solid salmon;
+  margin: 0.5em;
+  padding: 1em;
+  font-size: 2em;
+}
+.rems {
+  background-color: cadetblue;
+  padding: 1rem 0.5rem;
+  border: 5px solid rebeccapurple;
+}
+.rems-child {
+  background-color: cadetblue;
+  border: 5px solid salmon;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.exs {
+  background-color: cadetblue;
+  padding: 1ex 0.5ex;
+  border: 5px solid rebeccapurple;
+}
+.exs-child {
+  background-color: cadetblue;
+  border: 5px solid salmon;
+  margin: 0.5ex;
+  padding: 1ex;
+  font-size: 2ex;
+}
+.chs {
+  background-color: cadetblue;
+  border: 5px solid rebeccapurple;
+  width: 10ch;
+}
