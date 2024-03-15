@@ -109,3 +109,34 @@ html {
     conic-gradient(red 0% 50%, blue 50% 80%, gold 80%);
   border-radius: 50%;
 }
+.card {
+  border: thick solid black;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-position: cover;
+  object-position: 0 50%;
+
+  filter: blur(0.2rem);
+  filter: brightness(2);
+  filter: contrast(0.5);
+  filter: grayscale(1);
+  filter: sepia(0.75);
+  filter: hue-rotate(50deg);
+  filter: invert(1);
+}
+.filters img {
+  width: 100%;
+  height: 100%;
+  object-position: cover;
+  object-position: 0 50%;
+}
+.filter-multiple {
+  filter: blur(0.1rem) hue-rotate(150deg) opacity(0.5) invert(0);
+}
